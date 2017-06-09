@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body>
+<!--1、页面顶部-->
+<header class="hearder">
+    <!-- 包含块-->
+    <div class="container ly ly--middle ly--justify ff-yahei">
+        <!--1、 logo-->
+        <div class="logo">
+            <a href="#" class="logo__link">Melody甜品</a>
+        </div>
+        <!-- 2、导航-->
+        <ul class="nav ly ly__item--fill">
+            <li class="nav__item active">
+                <a href="#">首页</a>
+            </li>
+            <li class="nav__item">
+                <a href="#">生日</a>
+                <b class="dropdown"></b>
+                <!-- 下拉菜单-->
+                <div class="nav__item--menu ff-hei">
+                    <div class="menu__col">
+                        <h4>关系</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="">朋友</a></li>
+                            <li><a class="list" href="">情人</a></li>
+                            <li><a class="list" href="">兄妹</a></li>
+                            <li><a class="list" href="">孩子</a></li>
+                            <li><a class="list" href="">长辈</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>风味</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="">巧克力</a></li>
+                            <li><a class="list" href="">混合水果</a></li>
+                            <li><a class="list" href="">奶油蛋糕</a></li>
+                            <li><a class="list" href="">草莓</a></li>
+                            <li><a class="list" href="">香草</a></li>
+                            <li><a class="list" href="">无蛋糕</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>主题</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="products.html">心形</a></li>
+                            <li><a class="list" href="products.html">卡通蛋糕</a></li>
+                            <li><a class="list" href="products.html">三层蛋糕</a></li>
+                            <li><a class="list" href="products.html">方形蛋糕</a></li>
+                            <li><a class="list" href="products.html">圆形蛋糕</a></li>
+                            <li><a class="list" href="products.html">照片蛋糕</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>重量</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="products.html">1 kG</a></li>
+                            <li><a class="list" href="products.html">1.5 kG</a></li>
+                            <li><a class="list" href="products.html">2 kG</a></li>
+                            <li><a class="list" href="products.html">3 kG</a></li>
+                            <li><a class="list" href="products.html">4 kG</a></li>
+                            <li><a class="list" href="products.html">定制</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav__item">
+                <a href="#">婚礼</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+            <li class="nav__item">
+                <a href="#">特别优惠</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+            <li class="nav__item">
+                <a href="#">我们的店铺</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+        </ul>
+        <!-- 3、search。登录，购物车-->
+        <ul class="info ly ly--middle ly--justify">
+            <!-- search-->
+            <li class="info__search ly">
+                <input class="info__search-input">
+                <button class="info__search-button">搜索</button>
+            </li>
+            <!-- 登录-->
+            <li class="info__login">
+                <a href="login.html"><i></i>登录</a>
+            </li>
+            <!-- 购物车-->
+            <li class="info__shopping">
+                <a href="shoppingCart.html" target="_blank"><i></i>购物车+</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--2、用户登录-->
+<div class="login container">
+    <div class="login_title">
+        <h4>用户登录</h4>
+    </div>
+    <div class="ly">
+        <div class="left_menu">
+            <form action="">
+                <fieldset>
+                    <label for="uname"><span>Email/手机号码：</span></label><input type="text" id="uname" name="uname"/>
+                    <div id="uname_error" class="login_error">请输入手机号码</div>
+                </fieldset>
+                <fieldset>
+                    <label for="upwd"><span>密码：</span></label><input type="password" id="upwd" name="upwd"/>
+                    <div id="upwd_error" class="login_error">请输入密码</div>
+                </fieldset>
+                <fieldset>
+                    <label for="yzm"><span>验证码：</span></label><input type="text" id="yzm" name="yzm"/>
+                    <div id="yzm_error" class="login_error">请输入验证码</div>
+                </fieldset>
+                <fieldset>
+                    <div class="rem_u_box">
+                        <input type="checkbox" value="1" name="remember_username" id="remember_username"/><span>记住账户名</span>
+                    </div>
+                </fieldset>
+                <div class="login_c_box">
+                    <a href="" id="login_btn" class="login_btn" onclick="customer.login();">登&nbsp;&nbsp;录</a>
+                    <a href="" class="forget_pwd">忘记密码</a>
+                    <div class="menu-p">登录时遇到问题，请查看相关帮助或 <a href="">联系客服</a></div>
+                </div>
+            </form>
+        </div>
+        <div class="right_menu">
+            <p>还不是Melody甜品用户？</p>
+            <p>现在免费注册成为Melody甜品会员，体验美味蛋糕配送上门</p>
+            <div class="go_register">
+                <a href="register.html" target="_blank">注册新用户</a>
+            </div>
+            <div class="right_bottom">
+                <span>Veuillez signer</span>
+                <p>Inviter des amis <br/>peut être mystérieux.</p>
+                <b>
+                    Vous avez besoin de remplir le numéro de téléphone de votre login
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="login_banner ly ly--justify">
+        <a href="index.html"><img src="images/banner01.jpg"/></a>
+        <a href="index.html"><img src="images/banner02.jpg"/></a>
+        <a href="index.html"><img src="images/banner03.jpg"/></a>
+    </div>
+</div>
+<!--5、购物指南-->
+<footer class="foot__box">
+    <div class="container ly ly--justify">
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">公司</h4>
+            </li>
+            <li>
+                <a href="#">产品</a>
+            </li>
+            <li>
+                <a href="#">工作在这里</a>
+            </li>
+            <li>
+                <a href="#">团队</a>
+            </li>
+            <li>
+                <a href="#">新鲜事</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">服务</h4>
+            </li>
+            <li>
+                <a href="#">支持</a>
+            </li>
+            <li>
+                <a href="#">常见问题</a>
+            </li>
+            <li>
+                <a href="#">保证</a>
+            </li>
+            <li>
+                <a href="#">联系我们</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">订单和退货</h4>
+            </li>
+            <li>
+                <a href="#">订单状态</a>
+            </li>
+            <li>
+                <a href="#">运送政策</a>
+            </li>
+            <li>
+                <a href="#">退货政策</a>
+            </li>
+            <li>
+                <a href="#">礼品卡</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">法律</h4>
+            </li>
+            <li>
+                <a href="#">隐私</a>
+            </li>
+            <li>
+                <a href="#">条款</a>
+            </li>
+            <li>
+                <a href="#">社会责任感</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">联系我们</h4>
+            </li>
+            <li>
+                <a href="#">关注微信</a>
+            </li>
+            <li>
+                <a href="#">关注微博</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!--6、页面底部-->
+<footer class="footer ff-hei">
+    <p class="footer__contant">
+        Copyright © 2017. Melody Cake Shop
+    </p>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

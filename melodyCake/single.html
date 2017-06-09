@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品单页</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body>
+<!--1、页面顶部-->
+<header class="hearder">
+    <!-- 包含块-->
+    <div class="container ly ly--middle ly--justify ff-yahei">
+        <!--1、 logo-->
+        <div class="logo">
+            <a href="#" class="logo__link">Melody甜品</a>
+        </div>
+        <!-- 2、导航-->
+        <ul class="nav ly ly__item--fill">
+            <li class="nav__item active">
+                <a href="#">首页</a>
+            </li>
+            <li class="nav__item">
+                <a href="#">生日</a>
+                <b class="dropdown"></b>
+                <!-- 下拉菜单-->
+                <div class="nav__item--menu ff-hei">
+                    <div class="menu__col">
+                        <h4>关系</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="">朋友</a></li>
+                            <li><a class="list" href="">情人</a></li>
+                            <li><a class="list" href="">兄妹</a></li>
+                            <li><a class="list" href="">孩子</a></li>
+                            <li><a class="list" href="">长辈</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>风味</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="">巧克力</a></li>
+                            <li><a class="list" href="">混合水果</a></li>
+                            <li><a class="list" href="">奶油蛋糕</a></li>
+                            <li><a class="list" href="">草莓</a></li>
+                            <li><a class="list" href="">香草</a></li>
+                            <li><a class="list" href="">无蛋糕</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>主题</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="products.html">心形</a></li>
+                            <li><a class="list" href="products.html">卡通蛋糕</a></li>
+                            <li><a class="list" href="products.html">三层蛋糕</a></li>
+                            <li><a class="list" href="products.html">方形蛋糕</a></li>
+                            <li><a class="list" href="products.html">圆形蛋糕</a></li>
+                            <li><a class="list" href="products.html">照片蛋糕</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>重量</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="products.html">1 kG</a></li>
+                            <li><a class="list" href="products.html">1.5 kG</a></li>
+                            <li><a class="list" href="products.html">2 kG</a></li>
+                            <li><a class="list" href="products.html">3 kG</a></li>
+                            <li><a class="list" href="products.html">4 kG</a></li>
+                            <li><a class="list" href="products.html">定制</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav__item">
+                <a href="#">婚礼</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+            <li class="nav__item">
+                <a href="#">特别优惠</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+            <li class="nav__item">
+                <a href="#">我们的店铺</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+        </ul>
+        <!-- 3、search。登录，购物车-->
+        <ul class="info ly ly--middle ly--justify">
+            <!-- search-->
+            <li class="info__search ly">
+                <input class="info__search-input">
+                <button class="info__search-button">搜索</button>
+            </li>
+            <!-- 登录-->
+            <li class="info__login">
+                <a href="login.html" target="_blank"><i></i>登录</a>
+            </li>
+            <!-- 购物车-->
+            <li class="info__shopping">
+                <a href="shoppingCart.html" target="_blank"><i></i>购物车+</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--2、section 商品detail-->
+<div class="container ly product_intro ff-hei">
+    <!-- 左：图片预览-->
+    <div class="preview">
+        <!-- 1、上：大图-->
+        <div>
+            <img class="img" id="mImg" src="images/s1.png"/>
+            <div class="mask"></div>
+            <div class="superMask"></div>
+        </div>
+        <div class="largeDiv"></div>
+        <!-- 2、下：3幅小图-->
+        <ul id="icon_list">
+            <li>
+                <img class="img" src="images/s1.png"/>
+            </li>
+            <li>
+                <img class="img" src="images/s2.png"/>
+            </li>
+            <li>
+                <img class="img" src="images/s3.png"/>
+            </li>
+        </ul>
+    </div>
+    <!-- 右:detail-->
+    <div class="detail">
+        <!-- 大标题-->
+        <h1>美味新鲜出炉的黑森林蛋糕！与巧克力的完美混合</h1>
+        <p>寻找心中的美味，充满嘴唇的巧克力，丝滑浓郁</p>
+        <!-- 详细内容-->
+        <ul class="size">
+            <h3>尺寸</h3>
+            <li><a href="#">1 KG</a></li>
+            <li><a href="#">2 KG</a></li>
+            <li><a href="#">3 KG</a></li>
+            <li><a href="#">4 KG</a></li>
+        </ul>
+        <ul class="size">
+            <h3>层数</h3>
+            <li><a href="#">单层</a></li>
+            <li><a href="#">两层</a></li>
+            <li><a href="#">三层</a></li>
+        </ul>
+        <div class="favor">
+            <p> 推荐指数 :  </p>
+            <span class="star_list"></span>
+            <span class="star_list"></span>
+            <span class="star_list"></span>
+            <span class="star_list"></span>
+            <span class="star_list"></span>
+        </div>
+        <div class="prices">
+            <p> 价格 :  </p>
+            <div>
+                <span class="item_price"><a href="#">￥105</a></span>
+                <span class="item_price"><a href="#">￥155</a></span>
+                <span class="item_price"><a href="#">￥205</a></span>
+                <span class="item_price"><a href="#">￥255</a></span>
+                <span class="item_price"><a href="#">￥305</a></span>
+                <span class="item_price"><a href="#">￥405</a></span>
+            </div>
+        </div>
+        <div class="qty">
+            <p> 数量 :  </p>
+            <button>-</button><span>1</span><button>+</button>
+        </div>
+        <div>
+            
+        </div>
+        <div class="add">
+            <a href="#" class="add-cart">添加到购物车</a>
+        </div>
+    </div>
+</div>
+<!--3、描述-->
+<div class="container describe">
+    <header class="row__header">描述</header>
+    <div>
+        就好滴撒回复
+    </div>
+</div>
+<!--4、产品信息-->
+<div class="container">
+    <header class="row__header">产品介绍</header>
+    <!--商品介绍-具体内容-->
+    <div class="detail__info">
+        <ul>
+            <li>商品名称：摩斯黑森林蛋糕</li>
+            <li>商品编号：1039778</li>
+            <li>品牌：Melody</li>
+            <li>商品产地：江苏省苏州市</li>
+            <li>类别：蛋糕</li>
+            <li>口味：巧克力</li>
+        </ul>
+    </div>
+</div>
+<!--5、评论-->
+<div class="container">
+    <header class="row__header">商品评论</header>
+    <!-- 3、商品评价-->
+    <div class="comment">
+
+    </div>
+</div>
+<!--6、相关产品-->
+<div class="related">
+    <header class="container row__header">相关产品</header>
+    <div class="related-products container">
+        <h3>相关产品</h3>
+        <div class="single-product">
+            <b class="backward disabled"></b>
+            <b class="forward"></b>
+            <div class="alist">
+                <a href="single.html" class="first">
+                   <div class="singer-product-view">
+                       <img src="images/m1.png" class="img">
+                   </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m2.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m3.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m4.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m5.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m6.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m7.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+                <a href="single.html">
+                    <div class="singer-product-view">
+                        <img src="images/m9.png" class="img">
+                    </div>
+                    <div class="single-product-info">
+                        <h4>爱丽丝梦游仙境</h4>
+                        <p class="item_price">￥205</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--5、购物指南-->
+<footer class="foot__box">
+    <div class="container ly ly--justify">
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">公司</h4>
+            </li>
+            <li>
+                <a href="#">产品</a>
+            </li>
+            <li>
+                <a href="#">工作在这里</a>
+            </li>
+            <li>
+                <a href="#">团队</a>
+            </li>
+            <li>
+                <a href="#">新鲜事</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">服务</h4>
+            </li>
+            <li>
+                <a href="#">支持</a>
+            </li>
+            <li>
+                <a href="#">常见问题</a>
+            </li>
+            <li>
+                <a href="#">保证</a>
+            </li>
+            <li>
+                <a href="#">联系我们</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">订单和退货</h4>
+            </li>
+            <li>
+                <a href="#">订单状态</a>
+            </li>
+            <li>
+                <a href="#">运送政策</a>
+            </li>
+            <li>
+                <a href="#">退货政策</a>
+            </li>
+            <li>
+                <a href="#">礼品卡</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">法律</h4>
+            </li>
+            <li>
+                <a href="#">隐私</a>
+            </li>
+            <li>
+                <a href="#">条款</a>
+            </li>
+            <li>
+                <a href="#">社会责任感</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">联系我们</h4>
+            </li>
+            <li>
+                <a href="#">关注微信</a>
+            </li>
+            <li>
+                <a href="#">关注微博</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!--6、页面底部-->
+<footer class="footer ff-hei">
+    <p class="footer__contant">
+        Copyright © 2017. Melody Cake Shop
+    </p>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

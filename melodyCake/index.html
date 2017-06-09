@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的甜品店主页</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+
+</head>
+<body>
+<!--1、页面顶部-->
+<header class="hearder">
+    <!-- 包含块-->
+    <div class="container ly ly--middle ly--justify ff-yahei">
+        <!--1、 logo-->
+        <div class="logo">
+            <a href="#" class="logo__link">Melody甜品</a>
+        </div>
+        <!-- 2、导航-->
+        <ul class="nav ly ly__item--fill">
+            <li class="nav__item active">
+                <a href="index.html">首页</a>
+            </li>
+            <li class="nav__item">
+                <a href="#">生日</a>
+                <b class="dropdown"></b>
+                <!-- 下拉菜单-->
+                <div class="nav__item--menu ff-hei">
+                    <div class="menu__col">
+                        <h4>关系</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="">朋友</a></li>
+                            <li><a class="list" href="">情人</a></li>
+                            <li><a class="list" href="">兄妹</a></li>
+                            <li><a class="list" href="">孩子</a></li>
+                            <li><a class="list" href="">长辈</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>风味</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="">巧克力</a></li>
+                            <li><a class="list" href="">混合水果</a></li>
+                            <li><a class="list" href="">奶油蛋糕</a></li>
+                            <li><a class="list" href="">草莓</a></li>
+                            <li><a class="list" href="">香草</a></li>
+                            <li><a class="list" href="">无蛋糕</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>主题</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="products.html">心形</a></li>
+                            <li><a class="list" href="products.html">卡通蛋糕</a></li>
+                            <li><a class="list" href="products.html">三层蛋糕</a></li>
+                            <li><a class="list" href="products.html">方形蛋糕</a></li>
+                            <li><a class="list" href="products.html">圆形蛋糕</a></li>
+                            <li><a class="list" href="products.html">照片蛋糕</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__col">
+                        <h4>重量</h4>
+                        <ul class="menu__col--list">
+                            <li><a class="list" href="products.html">1 kG</a></li>
+                            <li><a class="list" href="products.html">1.5 kG</a></li>
+                            <li><a class="list" href="products.html">2 kG</a></li>
+                            <li><a class="list" href="products.html">3 kG</a></li>
+                            <li><a class="list" href="products.html">4 kG</a></li>
+                            <li><a class="list" href="products.html">定制</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav__item">
+                <a href="#">婚礼</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+            <li class="nav__item">
+                <a href="#">特别优惠</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+            <li class="nav__item">
+                <a href="#">我们的店铺</a>
+                <b class="dropdown"></b>
+                <div></div>
+            </li>
+        </ul>
+        <!-- 3、search。登录，购物车-->
+        <ul class="info ly ly--middle ly--justify">
+            <!-- search-->
+            <li class="info__search ly">
+                <input class="info__search-input">
+                <button class="info__search-button">搜索</button>
+            </li>
+            <!-- 登录-->
+            <li class="info__login">
+                <a href="login.html" target="_blank"><i></i>登录</a>
+            </li>
+            <!-- 购物车-->
+            <li class="info__shopping">
+                <a href="shoppingCart.html" target="_blank"><i></i>购物车+</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--2、banner-->
+<div class="banner ff-hei">
+    <div class="container ly ly--justify">
+        <div class="banner__content">
+            <h1 class="banner__title">
+                美味<span class="banner__title-color">cakes</span>for U
+            </h1>
+            <h4 class="banner__title-small">最好的蛋糕 给你特别的一天</h4>
+            <a href="#" class="banner__shopping">开启购物之旅</a>
+        </div>
+        <p class="banner__img">
+            <img src="images/2.png"/>
+        </p>
+    </div>
+</div>
+<!--3、页面主体-->
+<section class="main">
+    <div class="container product ly ly--justify">
+        <div class="product1">
+            <a href="single.html" class="product__img">
+                <img src="images/g1.jpg"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </div>
+        <div class="product2">
+            <a href="single.html" class="product__img">
+                <img src="images/g2.jpg"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <!--产品信息-->
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="container product__list ly ly--justify">
+        <li class="product3">
+            <a href="single.html" class="product__img">
+                <img src="images/g3.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product4">
+            <a href="single.html" class="product__img">
+                <img src="images/g4.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product5">
+            <a href="single.html" class="product__img">
+                <img src="images/g5.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product6">
+            <a href="single.html" class="product__img">
+                <img src="images/g6.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product7">
+            <a href="single.html" class="product__img">
+                <img src="images/g7.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product8">
+            <a href="single.html" class="product__img">
+                <img src="images/g8.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product9">
+            <a href="single.html" class="product__img">
+                <img src="images/g9.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <p class="product__shop-now">加入购物车</p>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+        <li class="product10">
+            <a href="single.html" class="product__img">
+                <img src="images/g10.png"/>
+                <!-- 弹出框-->
+                <div class="product__detail">
+                    <span class="product__detail-content">(眼睛)查看</span>
+                    <!--<a href="#" class="product_shop-now">SHOP NOW</a>-->
+                    <a href="#" class="product__shop-now">加入购物车</a>
+                </div>
+            </a>
+            <div class="product__info ly ly--justify ly--middle">
+                <div class="product__info-name">
+                    <p>美味甜品</p>
+                    <div class="product__info-star">
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <div class="product__info-price">
+                    ￥99.80
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--4、订阅-->
+<div class="slide">
+    <form class="slide__form">
+        <input class="slide__form-input" type="text" value="Email"/>
+        <input class="slide__form-input" type="submit" value="订阅"/>
+    </form>
+</div>
+<!--5、购物指南-->
+<footer class="foot__box">
+    <div class="container ly ly--justify">
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">公司</h4>
+            </li>
+            <li>
+                <a href="#">产品</a>
+            </li>
+            <li>
+                <a href="#">工作在这里</a>
+            </li>
+            <li>
+                <a href="#">团队</a>
+            </li>
+            <li>
+                <a href="#">新鲜事</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">服务</h4>
+            </li>
+            <li>
+                <a href="#">支持</a>
+            </li>
+            <li>
+                <a href="#">常见问题</a>
+            </li>
+            <li>
+                <a href="#">保证</a>
+            </li>
+            <li>
+                <a href="#">联系我们</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">订单和退货</h4>
+            </li>
+            <li>
+                <a href="#">订单状态</a>
+            </li>
+            <li>
+                <a href="#">运送政策</a>
+            </li>
+            <li>
+                <a href="#">退货政策</a>
+            </li>
+            <li>
+                <a href="#">礼品卡</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">法律</h4>
+            </li>
+            <li>
+                <a href="#">隐私</a>
+            </li>
+            <li>
+                <a href="#">条款</a>
+            </li>
+            <li>
+                <a href="#">社会责任感</a>
+            </li>
+        </ul>
+        <ul class="box__item">
+            <li>
+                <h4 class="box__item-title">联系我们</h4>
+            </li>
+            <li>
+                <a href="#">关注微信</a>
+            </li>
+            <li>
+                <a href="#">关注微博</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!--6、页面底部-->
+<footer class="footer ff-hei">
+    <p class="footer__contant">
+        Copyright © 2017. Melody Cake Shop
+    </p>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
