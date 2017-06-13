@@ -1,10 +1,10 @@
 //创建一个连接，连接到WS服务器
-var  socket=new WebSocket("ws://127.0.0.1:8000");
+var socket=new WebSocket("ws://127.0.0.1:8000");
 
 $(function() {
     //初始化加载listen方法
     listen();
-})
+});
 
 //向客户端发送消息，这里定义了一些参数用来设置消息的颜色字体，不过暂时没用到有兴趣的可以自己实现
 function emit() {
@@ -20,7 +20,6 @@ function emit() {
     msg = JSON.stringify(msg);
     //向服务端发送消息
     socket.send(msg);
-
     //将自己发送的消息内容静态加载到html上，服务端实现自己发送的消息不会推送给自己
     $("#content").append("<kbd style='color: #" + "CECECE" + ";float: right; font-size: " + 12 + ";'>" + text +  "</kbd><br/>");
     //将消息文本框清空
