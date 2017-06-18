@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {text-align: center; }
+    canvas {background: #fff;}
+	button{background:#ee0;padding:5px 10px;}
+  </style>
+</head>
+<body>
+<h3>幸运抽奖</h3>
+<h5>使用Canvas绘制小游戏</h5>
+<button id="bt">开始抽奖</button>
+<br><br>
+<canvas id="c1"></canvas>
+<script>
+  //全局的变量：记录所有图片总的加载进度
+  var progress = 0;
+  //:1：加载图片
+  var imgPan = new Image();
+  imgPan.src = 'img/pan.png';
+  imgPan.onload = function(){
+    progress +=75;
+    if(progress===100){
+      startDraw();
+    }
+  }
+  var imgPin = new Image();
+  imgPin.src = 'img/pin.png';
+  imgPin.onload = function(){
+    progress += 25;
+    if(progress===100){
+      startDraw();
+    }
+  }
+  //2：开始绘制静止的圆盘和指针
+  function startDraw(){
+    var cw = imgPan.width;  //圆盘&画布的宽
+    var ch = imgPan.height;
+    c1.width = cw;
+    c1.height = ch;
+    var ctx = c1.getContext('2d');
+    //先绘制圆盘
+    ctx.drawImage(imgPan, 0, 0);
+    //再绘制指针
+    ctx.drawImage(imgPin, cw/2-imgPin.width/2,ch/2-imgPin.height/2);
+  }
+
+  //3：点击按钮，开始抽奖
+  bt.onclick = function(){
+    //变量：设置一个随机的旋转总时长
+    var duration = Math.random()*4000+3000;
+    //变量：记录当前已经旋转的时长
+    var last = 0;
+    //变量：记录当前已经旋转的角度
+    var deg = 0;
+    var ctx = c1.getContext('2d');
+    //启动定时器，开始旋转：平移/旋转=>绘圆盘=>恢复=>绘制指针
+    var timer = setInterval(function(){
+      //保存画笔当前的状态
+      ctx.save();
+      //平移坐标轴原点
+      ctx.translate(c1.width/2, c1.height/2);
+      //旋转画笔
+      ctx.rotate(deg*Math.PI/180);
+      //绘制圆盘
+      ctx.drawImage(imgPan,-c1.width/2, -c1.height/2);
+      //恢复画笔的变形值到最近一次保存的状态
+      ctx.restore();
+
+      //绘制指针
+      ctx.drawImage(imgPin,c1.width/2-imgPin.width/2, c1.height/2-imgPin.height/2);
+
+      deg += (Math.random()*12+3);  //随机旋转速度
+      deg %= 360;
+      last += 20;
+      if(last>=duration){
+        clearInterval(timer);
+      }
+    },20)
+  };
+</script>
+</body>
+</html>
